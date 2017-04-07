@@ -59,9 +59,9 @@ int main(){
     });
 
     cout << "Ints in place using list" << endl;
-    list<int> input4 = {1,22,333,234,654};
-    auto end4 = symetricOnly(input4,input4.begin());
-    for_each(input4.begin(), end4, [](auto i) { cout << i << endl; });
+    list< int > ints = { 1, 12, 521, 11, 404, 205, 4363, 234256, 64346 };
+    auto end4 = symetricOnly(ints,ints.begin());
+    for_each(ints.begin(), end4, [](auto i) { cout << i << endl; });
 
     // If you uncomment this it should not compile
     /*
